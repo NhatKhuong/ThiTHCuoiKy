@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <Button
+        android:id="@+id/btnRegister_re"
+        android:layout_width="362dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#C1C33F"
+        android:text="Register"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtRePasswordInput_re"
+        app:layout_constraintStart_toStartOf="@+id/txtRePasswordInput_re"
+        app:layout_constraintTop_toBottomOf="@+id/txtRePasswordInput_re" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="Already have an account?"
+        android:textColor="#098CC3"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/btnRegister_re"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegister_re" />
+
+    <TextView
+        android:id="@+id/txtLogin_re"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Login here"
+        android:textColor="#098CC3"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="@+id/btnRegister_re"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/txtPasswordInput_re"
+        android:layout_width="364dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/txtEmailInput_re"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtEmailInput_re"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmailInput_re" />
+
+    <EditText
+        android:id="@+id/txtRePasswordInput_re"
+        android:layout_width="364dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Repeat Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/txtPasswordInput_re"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtPasswordInput_re"
+        app:layout_constraintTop_toBottomOf="@+id/txtPasswordInput_re" />
+
+    <EditText
+        android:id="@+id/txtEmailInput_re"
+        android:layout_width="364dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/txtNameInput_re"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtNameInput_re"
+        app:layout_constraintTop_toBottomOf="@+id/txtNameInput_re" />
+
+    <EditText
+        android:id="@+id/txtNameInput_re"
+        android:layout_width="364dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="88dp"
+        android:ems="10"
+        android:hint="Your Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

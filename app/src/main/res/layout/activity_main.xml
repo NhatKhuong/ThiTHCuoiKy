@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="362dp"
+        android:layout_height="65dp"
+        android:backgroundTint="#C1C33F"
+        android:text="add"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtGhiChuInput"
+        app:layout_constraintStart_toStartOf="@+id/txtGhiChuInput"
+        app:layout_constraintTop_toBottomOf="@+id/txtGhiChuInput" />
+
+    <EditText
+        android:id="@+id/txtCongViecInput"
+        android:layout_width="364dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Công việc"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtGhiChuInput"
+        android:layout_width="364dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Ghi chú"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/txtCongViecInput"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtCongViecInput"
+        app:layout_constraintTop_toBottomOf="@+id/txtCongViecInput" />
+
+    <ListView
+        android:id="@+id/lvCongViec"
+        android:layout_width="360dp"
+        android:layout_height="436dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtGhiChuInput"
+        app:layout_constraintStart_toStartOf="@+id/txtGhiChuInput"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
+</androidx.constraintlayout.widget.ConstraintLayout>
