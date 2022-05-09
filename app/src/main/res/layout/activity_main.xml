@@ -45,10 +45,11 @@
 
     <ListView
         android:id="@+id/lvCongViec"
-        android:layout_width="360dp"
-        android:layout_height="436dp"
+        android:layout_width="393dp"
+        android:layout_height="456dp"
         android:layout_marginTop="12dp"
         app:layout_constraintEnd_toEndOf="@+id/txtGhiChuInput"
+        app:layout_constraintHorizontal_bias="0.241"
         app:layout_constraintStart_toStartOf="@+id/txtGhiChuInput"
         app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
 </androidx.constraintlayout.widget.ConstraintLayout>
